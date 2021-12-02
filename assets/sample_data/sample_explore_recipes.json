@@ -19,24 +19,24 @@
       "source": "Apple Dictionary",
       "ingredients": [
         {
-          "imageUrl": "food_flour.jpg",
+          "imageUrl": "food_flour.jpeg",
           "title": "Flour",
           "source": "https://pixabay.com/photos/bake-butter-flour-mountain-pile-599521/"
         },
         {
-          "imageUrl": "food_dozen_eggs.jpg",
+          "imageUrl": "food_dozen_eggs.jpeg",
           "title": "Dozen Eggs",
           "source": "https://pixabay.com/photos/egg-hen-s-egg-food-nutrition-1374141/"
         }
       ],
       "instructions": [
         {
-          "imageUrl": "food_flour.jpg",
+          "imageUrl": "food_flour.jpeg",
           "description": "Pour the flour on the table.",
           "durationInMinutes": 5
         },
         {
-          "imageUrl": "food_dozen_eggs.jpg",
+          "imageUrl": "food_dozen_eggs.jpeg",
           "description": "Mix the eggs with the flour. ",
           "durationInMinutes": 5
         }
@@ -71,14 +71,14 @@
           "source": "https://pixabay.com/photos/soy-milk-soy-soybean-soy-milk-2263942/"
         },
         {
-          "imageUrl": "food_banana.jpg",
+          "imageUrl": "food_banana.jpeg",
           "title": "Banana",
           "source": "https://pixabay.com/photos/bananas-fruit-food-fresh-mature-3700718/"
         }
       ],
       "instructions": [
         {
-          "imageUrl": "food_banana.jpg",
+          "imageUrl": "food_banana.jpeg",
           "description": "Peel the banana, cut it in half and place it in the blender.",
           "durationInMinutes": 1
         },
@@ -113,24 +113,24 @@
       "source": "Apple Dictionary",
       "ingredients": [
         {
-          "imageUrl": "food_cucumber.jpg",
+          "imageUrl": "food_cucumber.jpeg",
           "title": "Cucumber",
           "source": "https://pixabay.com/photos/cucumbers-vegetables-green-healthy-849269/"
         },
         {
-          "imageUrl": "food_green_beans.jpg",
+          "imageUrl": "food_green_beans.jpeg",
           "title": "Green beans",
           "source": "https://pixabay.com/photos/beans-vegetables-green-market-4785/"
         },
         {
-          "imageUrl": "food_brussels_sprouts.jpg",
+          "imageUrl": "food_brussels_sprouts.jpeg",
           "title": "Brussel Sprouts",
           "source": "https://pixabay.com/photos/brussels-sprouts-vegetables-sprouts-22009/"
         }
       ],
       "instructions": [
         {
-          "imageUrl": "food_cucumber.jpg",
+          "imageUrl": "food_cucumber.jpeg",
           "description": "Cut the cucumber up into many pieces.",
           "durationInMinutes": 3
         },
