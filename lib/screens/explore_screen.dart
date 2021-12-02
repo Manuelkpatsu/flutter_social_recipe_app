@@ -5,10 +5,40 @@ import 'package:fluttersocialrecipeapp/models/explore_data.dart';
 
 import '../api/mock_fooderlich_service.dart';
 
-class ExploreScreen extends StatelessWidget {
-  final mockService = MockFooderlichService();
-
+class ExploreScreen extends StatefulWidget {
   ExploreScreen({Key? key}) : super(key: key);
+
+  @override
+  State<ExploreScreen> createState() => _ExploreScreenState();
+}
+
+class _ExploreScreenState extends State<ExploreScreen> {
+  final mockService = MockFooderlichService();
+  late ScrollController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = ScrollController();
+    _controller.addListener(_scrollListener);
+  }
+
+  void _scrollListener() {
+    if (_controller.offset >= _controller.position.maxScrollExtent &&
+        !_controller.position.outOfRange) {
+      print('reached the bottom');
+    }
+    if (_controller.offset <= _controller.position.minScrollExtent &&
+        !_controller.position.outOfRange) {
+      print('reached the top!');
+    }
+  }
+
+  @override
+  void dispose() {
+    _controller.removeListener(_scrollListener);
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
