@@ -3,6 +3,7 @@ import 'package:fluttersocialrecipeapp/models/grocery_manager.dart';
 import 'package:provider/provider.dart';
 
 import 'empty_grocery_screen.dart';
+import 'grocery_item_screen.dart';
 
 class GroceryScreen extends StatelessWidget {
   const GroceryScreen({Key? key}) : super(key: key);
@@ -13,7 +14,22 @@ class GroceryScreen extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
         onPressed: () {
-          // TODO 11: Present GroceryItemScreen
+          final manager = Provider.of<GroceryManager>(context, listen: false);
+
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => GroceryItemScreen(
+                onCreate: (item) {
+                  manager.addItem(item);
+                  Navigator.pop(context);
+                },
+                onUpdate: (item) {
+
+                },
+              ),
+            ),
+          );
         },
       ),
       body: buildGroceryScreen(),
