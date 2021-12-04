@@ -6,7 +6,7 @@ import 'package:fluttersocialrecipeapp/models/explore_data.dart';
 import '../api/mock_fooderlich_service.dart';
 
 class ExploreScreen extends StatefulWidget {
-  ExploreScreen({Key? key}) : super(key: key);
+  const ExploreScreen({Key? key}) : super(key: key);
 
   @override
   State<ExploreScreen> createState() => _ExploreScreenState();
